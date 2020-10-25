@@ -10,6 +10,8 @@ import android.widget.ViewFlipper;
 
 public class Menu_act extends AppCompatActivity {
 
+    private Intent i;
+
     private ViewFlipper vf;
     private int[] images = {R.drawable.polloprimerplano, R.drawable.papasfritas, R.drawable.chuleta, R.drawable.polloconpapas};
 
@@ -44,11 +46,15 @@ public class Menu_act extends AppCompatActivity {
 
     public void Avanzado(View v){
 
-        Intent i = new Intent(this, Avanzado_act.class);
+        i = new Intent(this, Avanzado_act.class);
         startActivity(i);
     }
 
+    public void CrearIngreso(View v){
 
+        i = new Intent(this, CrearMes_act.class);
+        startActivity(i);
+    }
 
 
 

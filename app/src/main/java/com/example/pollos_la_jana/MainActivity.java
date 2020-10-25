@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar pb;
     private Button btn;
 
+    private Intent i;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,14 +61,18 @@ public class MainActivity extends AppCompatActivity {
        @Override
        protected void onPostExecute(String s) { //finaliza mi tarea asíncrona
             pb.setVisibility(View.INVISIBLE);
-           Intent i= new Intent(getBaseContext(), Menu_act.class);
+           i= new Intent(getBaseContext(), Menu_act.class);
            startActivity(i);
        }
    }
 
 
 
+    public void registro(View v){
 
+        i = new Intent(this, Registro_act.class);
+        startActivity(i);
+    }
 
 
     //tarea pesada

@@ -53,10 +53,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="271dp"
-        android:layout_height="106dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="253dp"
+        android:layout_width="285dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="216dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
