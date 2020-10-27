@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <EditText
-            android:id="@+id/editTextTextPersonName7"
+            android:id="@+id/et_reg1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -71,7 +71,7 @@
             android:textColorHint="@color/colorAccent" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/et_reg2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -80,7 +80,7 @@
             android:textColorHint="@color/colorAccent" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/et_reg3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -89,7 +89,7 @@
             android:textColorHint="@color/colorAccent" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName8"
+            android:id="@+id/et_reg4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -98,7 +98,7 @@
             android:textColorHint="@color/colorAccent" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/et_reg5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -111,6 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/background_dark"
+            android:onClick="anadirColaborador"
             android:text="Registrarse"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="#FFFFFF"

@@ -52,9 +52,16 @@ public class Menu_act extends AppCompatActivity {
 
     public void CrearIngreso(View v){
 
-        i = new Intent(this, CrearMes_act.class);
+        i = new Intent(this, CrearIngreso_act.class);
         startActivity(i);
     }
+
+    public void Balance(View v){
+
+        i = new Intent(this, Balance_act.class);
+        startActivity(i);
+    }
+
 
 
 
