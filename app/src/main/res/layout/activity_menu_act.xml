@@ -94,7 +94,7 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginTop="1dp"
                     android:gravity="center"
-                    android:text="Balance"
+                    android:text="Ver Ingreso"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"

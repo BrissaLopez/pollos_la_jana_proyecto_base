@@ -9,86 +9,73 @@
 
     <TableLayout
         android:id="@+id/tableLayout3"
-        android:layout_width="324dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="6dp"
-        android:gravity="center_vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        android:layout_width="257dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+            android:layout_height="86dp">
 
             <ImageButton
-                android:id="@+id/imageButton15"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:id="@+id/btn_guardar"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="clip_horizontal"
                 android:background="@android:color/background_light"
+                android:onClick="crearDiaDeTrabajo"
                 app:srcCompat="@drawable/guardararchivo" />
 
-            <Space
-                android:layout_width="43dp"
-                android:layout_height="match_parent" />
-
             <ImageButton
-                android:id="@+id/imageButton16"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:id="@+id/imageButton2"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
                 android:background="@android:color/background_light"
+                android:onClick="editarDiaDeTrabajo"
                 app:srcCompat="@drawable/editar" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="621dp">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="124dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="Guardar"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="124dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="Editar"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
     </TableLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="281dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginLeft="59dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginRight="53dp"
-        android:layout_marginBottom="58dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout3">
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="137dp"
-            android:layout_height="38dp"
-            android:gravity="center"
-            android:text="Guardar"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="147dp"
-            android:layout_height="36dp"
-            android:gravity="center"
-            android:text="Editar"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
     <TableLayout
         android:id="@+id/tableLayout4"
-        android:layout_width="321dp"
-        android:layout_height="291dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="350dp"
+        android:layout_height="387dp"
+        android:layout_marginTop="47dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -107,7 +94,6 @@
                 android:textColor="@android:color/background_light"
                 android:textSize="24sp"
                 android:textStyle="bold" />
-
         </TableRow>
 
         <TableRow
@@ -116,7 +102,7 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="148dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="bottom|center_vertical"
@@ -127,7 +113,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/spinner2"
+                android:id="@+id/spin1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -140,7 +126,7 @@
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="261dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="bottom|center_vertical"
@@ -151,7 +137,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/spinner4"
+                android:id="@+id/spin2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
@@ -159,12 +145,12 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/textView15"
-                android:layout_width="100dp"
-                android:layout_height="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:text="Ingrese Día"
@@ -173,21 +159,21 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/spinner3"
-                android:layout_width="172dp"
-                android:layout_height="match_parent"
+                android:id="@+id/spin3"
+                android:layout_width="220dp"
+                android:layout_height="43dp"
                 android:layout_weight="1" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="28dp"
+            android:layout_height="match_parent"
             android:gravity="center">
 
             <TextView
                 android:id="@+id/textView19"
-                android:layout_width="115dp"
+                android:layout_width="156dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
@@ -197,50 +183,78 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/et_dia1"
+                android:layout_width="144dp"
+                android:layout_height="44dp"
                 android:ems="10"
                 android:hint="Ingrese monto"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
+
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="310dp"
+            android:layout_height="123dp">
 
             <TextView
                 android:id="@+id/textView20"
-                android:layout_width="115dp"
+                android:layout_width="151dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:text="Fin de Caja"
                 android:textColor="@android:color/background_light"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="86dp"
+                tools:layout_editor_absoluteY="345dp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/et_dia2"
+                android:layout_width="147dp"
+                android:layout_height="44dp"
                 android:ems="10"
                 android:hint="Ingrese monto"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Crear código identificador"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="86dp"
+                tools:layout_editor_absoluteY="345dp" />
+
+            <EditText
+                android:id="@+id/et_dia3"
+                android:layout_width="169dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:hint="Fecha ->Ej: 20201025"
+                android:inputType="number" />
         </TableRow>
 
     </TableLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout5"
-        android:layout_width="275dp"
-        android:layout_height="138dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="244dp"
+        android:layout_width="296dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout4">
 
@@ -249,18 +263,19 @@
             android:layout_width="match_parent"
             android:layout_height="51dp"
             android:gravity="center"
-            android:text="Detalle de Ingresos - Egresos"
+            android:text="Ingresos - Egresos - Observaciones"
             android:textColor="@color/colorAccent"
             android:textSize="16dp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine2"
+            android:id="@+id/et_dia4"
             android:layout_width="match_parent"
             android:layout_height="84dp"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

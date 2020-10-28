@@ -16,9 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Balance_act"></activity>
-        <activity android:name=".CrearIngreso_act" />
         <activity android:name=".CrearIngresoDiario_act" />
-        <activity android:name=".CrearMes_act" />
         <activity android:name=".Registro_act" />
         <activity android:name=".Pagos_act" />
         <activity android:name=".SobreNosotros_act" />

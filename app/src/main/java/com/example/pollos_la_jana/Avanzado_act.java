@@ -24,10 +24,11 @@ public class Avanzado_act extends AppCompatActivity {
 
 
         //Asignar nuestro video mp4 al videoview a través de su ruta
-        ruta = "android.resource://" + getPackageName() + "/" + R.raw.video; //obtenemos la ruta del video
+        ruta = "android.resource://" + getPackageName() + "/" + R.raw.videopollo; //obtenemos la ruta del video
         Uri uri = Uri.parse(ruta);
 
         videoView.setVideoURI(uri);
+        videoView.start();
 
 
 
